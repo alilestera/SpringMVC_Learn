@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [04/Feb/2022:21:56:16 +0800] "GET /hello.html HTTP/1.1" 200 141 http-bio-81-exec-1 36
+0:0:0:0:0:0:0:1 - - [04/Feb/2022:21:56:16 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-81-exec-3 1
