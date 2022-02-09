@@ -18,4 +18,12 @@
             </bean>
         </mvc:message-converters>
     </mvc:annotation-driven>
+
+    <!--<bean class="org.springframework.context.support.ConversionServiceFactoryBean" id="myConversionService">-->
+    <!--    <property name="converters">-->
+    <!--        <set>-->
+    <!--            <bean class="com.alilestera.converter.StringToDataConverter"></bean>-->
+    <!--        </set>-->
+    <!--    </property>-->
+    <!--</bean>-->
 </beans>

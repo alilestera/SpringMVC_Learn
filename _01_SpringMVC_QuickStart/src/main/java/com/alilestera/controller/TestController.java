@@ -1,9 +1,12 @@
 package com.alilestera.controller;
 
+import com.alilestera.pojo.User;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Arrays;
+import java.util.Date;
 
 /**
  * @author Alilestera
@@ -64,6 +67,20 @@ public class TestController {
     @RequestMapping(value = "/testConsumes", method = RequestMethod.POST, consumes = "multipart/form-data")
     public String testConsumes() {
         System.out.println("testConsumes处理了请求");
+        return "/success.jsp";
+    }
+
+    @GetMapping("/testRequestParam")
+    public String testRequestParam(User user) {
+        System.out.println("testRequestParam的实现代码");
+        System.out.println(user);
+        return "/success.jsp";
+    }
+
+    @GetMapping("/testDateConverter")
+    public String testDateConverter(@DateTimeFormat(pattern = "yyyy/MM/dd") Date date) {
+        System.out.println("testDateConverter的实现代码");
+        System.out.println(date);
         return "/success.jsp";
     }
 }

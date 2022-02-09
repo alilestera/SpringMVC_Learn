@@ -1,1 +1,4 @@
+com\alilestera\converter\StringToDataConverter.class
+com\alilestera\controller\UserController.class
+com\alilestera\pojo\User.class
 com\alilestera\controller\TestController.class
