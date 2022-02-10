@@ -83,4 +83,9 @@ public class TestController {
         System.out.println(date);
         return "/success.jsp";
     }
+
+    @GetMapping("/testJump")
+    public String testJump() {
+        return "redirect:/success.jsp";
+    }
 }
