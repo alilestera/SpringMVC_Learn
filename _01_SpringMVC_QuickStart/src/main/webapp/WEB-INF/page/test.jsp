@@ -14,5 +14,7 @@
     ${requestScope.get("name")}
     ${requestScope.get("age")}
     ${requestScope.get("org.springframework.web.servlet.HandlerMapping.bestMatchingPattern")}
+    <hr>
+    ${sessionScope.get("name")}
 </body>
 </html>
