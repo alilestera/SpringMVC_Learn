@@ -19,6 +19,18 @@
         </mvc:message-converters>
     </mvc:annotation-driven>
 
+    <!--配置拦截器-->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <!--配置要拦截的路径-->
+            <mvc:mapping path="/**"/>
+            <!--配置排除拦截的路径-->
+            <!--<mvc:exclude-mapping path=""/>-->
+            <!--配置拦截器对象注入容器-->
+            <bean class="com.alilestera.interceptor.MyInterceptor"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
     <!--<bean class="org.springframework.context.support.ConversionServiceFactoryBean" id="myConversionService">-->
     <!--    <property name="converters">-->
     <!--        <set>-->
