@@ -1,0 +1,3 @@
+com\alilestera\resolver\MyHandlerExceptionResolver.class
+com\alilestera\exception\MyControllerAdvice.class
+com\alilestera\controller\TestController.class
